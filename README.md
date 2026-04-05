@@ -1,4 +1,4 @@
-# Responsive Portfolio Website Patrick
+# Joel Rudin Responsive Portfolio website
 
 ### Responsive Portfolio Website 
 
