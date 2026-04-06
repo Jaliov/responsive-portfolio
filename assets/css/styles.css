@@ -482,17 +482,17 @@ rect,  .home, #maskBlob {
   row-gap: 2rem;
   justify-content: center;
   padding-block: 1rem;
-  background-color: var(--container-color);
+  /* background-color: var(--container-color); */
   border-radius: 1rem;
-  
+  /* width: 100vw; */
    /* box-shadow: 0 8px 24px var(--title-color);
   color: var(--body-color) */
 }
 
-.projects__container:hover {
+/* .projects__container:hover {
    box-shadow: 0 8px 24px var(--title-color);
   background-image: linear-gradient(to bottom, rgba(49, 56, 69, 0.3), rgba(0,0,0,0.5));
-}
+} */
 
 .projects__card {
   position: relative; 
@@ -523,6 +523,7 @@ rect,  .home, #maskBlob {
    align-items: center;
    justify-content: center;
    transition: bottom .4s;
+   
 }
 
 .projects__subtitle, 
@@ -543,15 +544,17 @@ rect,  .home, #maskBlob {
   margin-bottom:.25rem;
 }
 
-.projects__title {
+.projects__title,
+.projects__title-light
+ {
   font-size: var(--h2-font-size);
-  margin-bottom: .75rem; 
+  margin-bottom: .03rem; 
   color: var(--first-color);
 }
 
 .projects__title-light {
   font-size: var(--h2-font-size);
-  margin-bottom: .75rem; 
+  /* margin-bottom: .75rem;  */
   color: var(--text-color);
 }
 
@@ -865,11 +868,13 @@ footer__title span {
     padding: 3.5rem 2rem;
   }
   .projects__container {
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 400px);
     row-gap: 3rem;
     padding-block: 2.5rem 4rem;
   }
-  .projects__button {
+  .projects__button,
+   .projects__button-light
+   {
     font-size: var(--normal-font-size);
   }
   .contact__container {
