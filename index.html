@@ -12,23 +12,24 @@
    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
    <!--=============== FONT ===============-->
-   <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
-      rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+    rel="stylesheet">
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
 
    <title>Responsive portfolio website - Bedimcode</title>
 </head>
 <style>
-   body {
+   body
+  
+   {
       background-image: url("storefrontsColorizedTextureBlueNeon.jpg");
    }
-
-   .skills,
+     .skills,
    .section,
    .contact,
-   .projects {
+    .projects {
       background-image: url("storefrontsColorizedTextureBlueNeondrk.jpg");
    }
 
@@ -43,29 +44,27 @@
    .footer {
       background-image: url("storefrontsColorizedTextureBlueNeondrk.jpg");
    }
+   .image-frame  {
+   clip-path: polygon(50% 0%, 100% 23%, 100% 70%, 50% 95%, 50% 95%, 0 69%, 0 23%);
+   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+   justify-self: top;
+  display: inline-block; /* Wraps tightly around the image */
+  padding: 40px;         /* Space between image and border */
+  border-radius: 1rem;;
+  /* background-color: rgba(49, 56, 69, 0.5); */
+  background-image: linear-gradient(to bottom, rgb(160, 54, 86, .8), rgba(0,0,0,0.5));
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3); /* Adds a 3D depth effect */
+  margin-left: 5em; 
+}
 
-   .image-frame {
-      justify-self: top;
-      display: inline-block;
-      /* Wraps tightly around the image */
-      padding: 40px;
-      /* Space between image and border */
-      border-radius: 1rem;
-      ;
-      /* background-color: rgba(49, 56, 69, 0.5); */
-      background-image: linear-gradient(to bottom, rgba(49, 56, 69, 0.3), rgba(0, 0, 0, 0.5));
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-      /* Adds a 3D depth effect */
-   }
+.image-frame img {
+  justify-self: center;
+  display: block;        /* Removes extra bottom spacing */
+  max-width: 100%;       /* Ensures responsiveness */
+  height: auto;
+  
 
-   .image-frame img {
-      justify-self: cente;
-      display: block;
-      /* Removes extra bottom spacing */
-      max-width: 100%;
-      /* Ensures responsiveness */
-      height: auto;
-   }
+}
 </style>
 
 <body>
@@ -141,9 +140,9 @@
                      design, I offer the best projects resulting
                      in quality work.
                   </p>
-                  <a href="#contact"><button class="button">Let's Talk</button></a>
-
-
+                  <a href="#contact"><button  class="button">Let's Talk</button></a>
+                    
+                
                </div>
 
                <div class="home__social">
@@ -155,7 +154,7 @@
                   </a>
                </div>
             </div>
-            <div class="home__image">
+             <div class="home__image">
                <!-- <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
                  <mask id="maskBlob" mask-type="alpha">
                      <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
@@ -171,26 +170,27 @@
       587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
       438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" /> 
  <rect x="37" width="476" height="630" fill="url(#pattern0)" />
-                  </g> -->
+                  </g> --> 
 
-               <!-- <rect x="37" width="476" height="300" fill="url(#pattern1)" /> -->
+                  <!-- <rect x="37" width="476" height="300" fill="url(#pattern1)" /> -->
 
-               <defs>
-                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                     <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
-                  </pattern>
+                  <!-- <defs>
+                     <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+                     </pattern> 
 
-                  <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                     <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
-                  </pattern>
-                  <div class="image-frame">
-                     <img src="assets\img\Joel_Rudin_headshot-remove.png" alt="Joel Rudin headshot" width="240"
-                        height="auto">
+                     <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+                     </pattern> -->
+                     <div class="image-frame">
+                        <img src="assets\img\Joel_Rudin_headshot-remove_smll.png" alt="Joel Rudin headshot" width="240" height="auto">
+                     
+
                      <!-- Insert your profile (recommended size: 640 x 940) -->
                      <!-- <image class="home__img" id="imageBlob" 
                         href="assets\img\Joel_Rudin_headshot-remove.png" /> -->
-                  </div>
-               </defs>
+                        </div>
+                  <!-- </defs> -->
                </svg>
             </div>
          </div>
@@ -207,17 +207,17 @@
                   About Me
                </h2>
                <p class="about__description">
-
-                  <strong>Joel Rudin</strong> is a professional musician who creates
-                  websites, does graphic design and makes art. He holds a certificate from
-                  the <br />
-                  <strong> Rutgers Full Stack Coding Bootcamp</strong>, April, 2020.<br>
-
-                  He designed his first websites in 2011 using HTML, CSS and JavaScript and
-                  recently updated them with the technologies learned at
-                  bootcamp. He has a passion for frontend design and is always seeking to
-                  make the UI more unique and aethetic, as well as user friendly.
-
+            
+      <strong>Joel Rudin</strong> is a professional musician who creates
+      websites, does graphic design and makes art. He holds a certificate from
+      the <br />
+      <strong> Rutgers Full Stack Coding Bootcamp</strong>, April, 2020.<br>
+   
+      He designed his first websites in 2011 using HTML, CSS and JavaScript and
+      recently updated them with the technologies learned at
+      bootcamp. He has a passion for frontend design and is always seeking to
+      make the UI more unique and aethetic, as well as user friendly.
+  
                </p>
                <a href="#contact" class="button">Contact</a>
             </div>
@@ -260,13 +260,13 @@
          <!-- </div>
          </div> -->
       </section>
-      <!-- 
+<!-- 
       </div>
       </section> -->
 
       <!--==================== SKILLS ====================-->
       <section class="skills">
-
+       
          <div class="skills__container container grid">
             <div class="skills__data">
                <h3 class="section__subtitle" ;>
@@ -279,7 +279,7 @@
                   See fully what skills I hae and perform,
                   to develop projects for you.
                </p>
-               <a href="#projects"><button class="button contact__button">See projects</button></a>
+               <a href="#projects" ><button  class="button contact__button">See projects</button></a>
             </div>
             <div class="skills__content">
                <ol class="sills__group">
@@ -329,7 +329,7 @@
       </section>
 
       <!--==================== PROJECTS ====================-->
-      <section class="projects" id="projects">
+    <section class="projects" id="projects">
          <h3 class="section__subtitle">
             My <span>Jobs</span>
          </h3>
