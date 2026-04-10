@@ -354,20 +354,21 @@ rect,  .home, #maskBlob {
   width: 220px;
   /* fill: var(--first-color); */
   filter: drop-shadow(8 12px 12px hsla(var(--hue), 100%, 40%, .2));
-  background-image: linear-gradient(to bottom, rgba(49, 56, 69, 0.3), var(  --title-color));
+  background-image: linear-gradient(to bottom, rgba(49, 56, 69, 0.5), var(  --title-color));
       box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 /*=============== BUTTON ===============*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color:  rgb(from var(--first-color) r g b / 3.0);
   padding: 1rem 2rem;
   border-radius: .5rem;
   color: var(--title-color);
   font-weight: var(--font-medium);
   transition: box-shadow .4s;
   margin-bottom: 1rem;
+  color:  rgb(from var(--title-color) r g b / 1.0);
 }
 
 .button:hover{
@@ -758,6 +759,9 @@ footer__title span {
   {
     grid-template-columns: 360px;
     justify-content: center;
+  }
+  .image-frame {
+    margin-left: 0;
   }
 }
 

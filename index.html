@@ -42,12 +42,12 @@
    }
 
    .home__image {
-      filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+      filter: drop-shadow(10px 5px 10px rgba(223, 23, 23, 0.5));
    }
 
    .image-frame {
       clip-path: polygon(50% 0%, 100% 23%, 100% 70%, 50% 95%, 50% 95%, 0 69%, 0 23%);
-      filter: drop-shadow(5px 5px 10px rgba(223, 23, 23, 0.5));
+      /* filter: drop-shadow(5px 5px 10px rgba(223, 23, 23, 0.5)); */
       justify-self: top;
       display: inline-block;
       /* Wraps tightly around the image */
@@ -56,12 +56,18 @@
       border-radius: 1rem;
       ;
       /* background-color: rgba(49, 56, 69, 0.5); */
-      background-image: linear-gradient(to bottom, rgb(160, 54, 86, .3), rgba(0, 0, 0, 0.5));
-      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+      background-image: linear-gradient(to bottom, rgb(160, 54, 86, .2), rgba(0, 0, 0, 0.5));
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); 
       /* Adds a 3D depth effect */
       margin-left: 5em;
    }
 
+   @media screen and (max-width: 576px) {
+      .image-frame {
+         margin-left: 3em;
+         margin-top: 0;
+      }
+   }
    .image-frame img {
       justify-self: center;
       display: block;
