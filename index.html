@@ -12,55 +12,66 @@
    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
    <!--=============== FONT ===============-->
-    <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
-    rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet">
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
 
    <title>Responsive portfolio website - Bedimcode</title>
 </head>
 <style>
-   body
-  
-   {
+   body {
       background-image: url("storefrontsColorizedTextureBlueNeon.jpg");
    }
+
    .skills,
    .section,
    .contact,
-   .projects   
-   {
-   background-image: url("storefrontsColorizedTextureBlueNeondrk.jpg");
+   .projects {
+      background-image: url("storefrontsColorizedTextureBlueNeondrk.jpg");
    }
 
-   .services, .contact {
+   .services,
+   .contact {
       background-image: url("storefrontsColorizedTextureBlueNeon.jpg");
    }
+
    .footer {
       background-image: url("storefrontsColorizedTextureBlueNeondrk.jpg");
    }
-   .image-frame  {
-   clip-path: polygon(50% 0%, 100% 23%, 100% 70%, 50% 95%, 50% 95%, 0 69%, 0 23%);
-   
-   justify-self: top;
-  display: inline-block; /* Wraps tightly around the image */
-  padding: 40px;         /* Space between image and border */
-  border-radius: 1rem;;
-  /* background-color: rgba(49, 56, 69, 0.5); */
-  background-image: linear-gradient(to bottom, rgb(160, 54, 86, .5), rgba(0,0,0,0.5));
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.3); /* Adds a 3D depth effect */
-  margin-left: 5em; 
-}
 
-.image-frame img {
-  justify-self: center;
-  display: block;        /* Removes extra bottom spacing */
-  max-width: 100%;       /* Ensures responsiveness */
-  height: auto;
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+   .home__image {
+      filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+   }
 
-}
+   .image-frame {
+      clip-path: polygon(50% 0%, 100% 23%, 100% 70%, 50% 95%, 50% 95%, 0 69%, 0 23%);
+      filter: drop-shadow(5px 5px 10px rgba(223, 23, 23, 0.5));
+      justify-self: top;
+      display: inline-block;
+      /* Wraps tightly around the image */
+      padding: 40px;
+      /* Space between image and border */
+      border-radius: 1rem;
+      ;
+      /* background-color: rgba(49, 56, 69, 0.5); */
+      background-image: linear-gradient(to bottom, rgb(160, 54, 86, .3), rgba(0, 0, 0, 0.5));
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+      /* Adds a 3D depth effect */
+      margin-left: 5em;
+   }
+
+   .image-frame img {
+      justify-self: center;
+      display: block;
+      /* Removes extra bottom spacing */
+      max-width: 100%;
+      /* Ensures responsiveness */
+      height: auto;
+      filter: drop-shadow(5px 5px 10px rgba(230, 4, 4, 0.2));
+
+   }
 </style>
 
 <body>
@@ -132,11 +143,11 @@
                   <h3 class="home__education">Front-end Developer</h3>
 
                   <p class="home__description">
-                     Offering fully functional websites with an aethetic finish.
+                     Offering fully functional websites with an aethetic look.
                   </p>
-                  <a href="#contact"><button  class="button">Let's Talk</button></a>
-                    
-                
+                  <a href="#contact"><button class="button">Let's Talk</button></a>
+
+
                </div>
 
                <div class="home__social">
@@ -148,14 +159,15 @@
                   </a>
                </div>
             </div>
-             <div class="home__image">
-             
-                     <div class="image-frame">
-                        <img src="assets\img\Joel_Rudin_headshot-remove_smll.png" alt="Joel Rudin headshot" width="240" height="auto">
-                     
+            <div class="home__image">
 
-                        </div>
-                  <!-- </defs> -->
+               <div class="image-frame">
+                  <img src="assets\img\Joel_Rudin_headshot-remove_smll.png" alt="Joel Rudin headshot" width="240"
+                     height="auto">
+
+
+               </div>
+               <!-- </defs> -->
                </svg>
             </div>
          </div>
@@ -171,27 +183,27 @@
                <h2 class="section__title">
                   About Me
                </h2>
-               
+
                <p class="about__description">
-            
-      <strong>Joel Rudin</strong> is a professional musician who creates
-      websites, does graphic design and makes art. He holds a certificate from
-      the <br />
-      <strong> Rutgers Full Stack Coding Bootcamp</strong>, April, 2020.</p>
-   
-      <p class = "about__description ">He designed his first websites in 2011 using HTML, CSS and JavaScript and
-      recently updated them with the technologies learned at
-      bootcamp. He has a passion for frontend design and is always seeking to
-      make the UI more unique and aethetic, as well as user friendly. </p>  
-               <a href="#contact"><button class = "button">Contact</button></a>
+
+                  <strong>Joel Rudin</strong> is a professional musician who creates
+                  websites, does graphic design and makes art. He holds a certificate from
+                  <br />
+                  <strong> Rutgers Full Stack Coding Bootcamp</strong>, April, 2020.
+               </p>
+               <p class="about__description ">He designed his first websites in 2011 using HTML, CSS and     JavaScript and
+                  has been updating his skills ever since has the technology has advanced.
+                  He has a passion for frontend design and is always seeking to
+                  make the UI more unique and aethetic, as well as user friendly. </p>
+               <a href="#contact"><button class="button">Contact</button></a>
             </div>
          </div>
-        
+
       </section>
 
       <!--==================== SKILLS ====================-->
       <section class="skills">
-       
+
          <div class="skills__container container grid">
             <div class="skills__data">
                <h3 class="section__subtitle" ;>
@@ -201,9 +213,9 @@
                   My Skills
                </h2>
                <p class="skills__description">
-                  This is all I need, the skills I use to build beautiful sites.
+                  This is all I need, the skills I use to build lovely sites.
                </p>
-               <a href="#projects" ><button  class="button contact__button">See projects</button></a>
+               <a href="#projects"><button class="button contact__button">See projects</button></a>
             </div>
             <div class="skills__content">
                <ol class="sills__group">
@@ -242,7 +254,7 @@
                <i class="ri-quill-pen-line services__icon"></i>
                <h2 class="services__title">Graphic Design</h2>
                <p class="services__description">
-                  
+
                   Banners, posters, digital
                   designs among others.
             </article>
@@ -251,7 +263,7 @@
       </section>
 
       <!--==================== PROJECTS ====================-->
-    <section class="projects" id="projects">
+      <section class="projects" id="projects">
          <h3 class="section__subtitle">
             My <span>Jobs</span>
          </h3>
@@ -285,8 +297,8 @@
                   </a>
                   <ul class="projects__subtitle-light">
                      <li>HTML</li>
-                      <li>CSS</li>
-                       <li>JavaScript</li>
+                     <li>CSS</li>
+                     <li>JavaScript</li>
                      <li>React</li>
                      <li>React Bootstrap</li>
                      <li>Simple React Lightbox</li>
@@ -301,7 +313,7 @@
                   <a href="https://jaliov.github.io/Weather-Map/" class="projects__button">
                      View site <i class="ri-external-link-line"></i>
                   </a>
-                   <ul class="projects__subtitle">
+                  <ul class="projects__subtitle">
                      <li>HTML, CSS, JavaScript</li>
                      <li>Bootstrap</li>
                      <li>jQuery</li>
