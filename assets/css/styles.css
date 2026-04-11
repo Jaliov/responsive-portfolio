@@ -555,14 +555,13 @@ rect,  .home, #maskBlob {
    font-size: var(--small-font-size);
 }
 
-.projects--subtitle, 
+.projects__subtitle, 
 .projects__subtitle-light {
   display: block; 
   margin-bottom:.25rem;
 }
 
-.projects__title,
-.projects__title-light
+.projects__title
  {
   font-size: var(--h2-font-size);
   margin-bottom: .03rem; 
@@ -578,7 +577,7 @@ rect,  .home, #maskBlob {
 .projects__button {
   display: flex; 
   align-items: center;
-  column-gap: .5rem; 
+  /* column-gap: .5rem;  */
   font-weight: var(--font-medium);
 }
 
@@ -897,6 +896,7 @@ footer__title span {
    {
     font-size: var(--normal-font-size);
   }
+  
   .contact__container {
     grid-template-columns: 680px;
     padding-block: 2.5rem 2rem;
