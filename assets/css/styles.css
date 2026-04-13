@@ -142,7 +142,7 @@ rect,  .home, #maskBlob {
   display: grid;
   gap: 1.5rem;
   /* direction: rtl;  */
-  grid-template-columns: max-content fit-content(200px) 1fr; 
+ 
 }
 
 
@@ -397,6 +397,7 @@ rect,  .home, #maskBlob {
  
 .about__data {
   margin-top: 2rem;
+  margin-right: -20px;
   /* text-align: center; */
 }
 
