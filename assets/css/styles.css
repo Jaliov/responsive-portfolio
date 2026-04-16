@@ -341,9 +341,10 @@ svg {
   justify-self: center;
 }
 
-.home__blob {
+.home__blob, 
+.about__blob {
   width: 320px;
-  fill: var(--first-color);
+  /* fill: var(--container-color); */
   filter: drop-shadow(0 12px 12px hsl(331 42.4% 23.1%));
   /* background-image: linear-gradient(to bottom, rgba(49, 56, 69, 0.2), var(  --title-color)); */    
 }
@@ -363,6 +364,7 @@ svg {
   font-weight: var(--font-medium);
   transition: box-shadow .4s;
   color:  rgb(from var(--title-color) r g b / 1.0);
+ 
 }
 
 .button:hover{
@@ -400,12 +402,14 @@ svg {
   justify-self: center;
 }
 
-.about__blob{
-  width: 320px;
+.about__blob,
+.image__blob{
+  width: 400px;
 } 
 
 .about__blob path{
   stroke: var(--first-color);
+  fill: rgb(from var(--container-color) r g b / 1.0)
 }
 /* .image__frame {
   margin-top: 2rem;
