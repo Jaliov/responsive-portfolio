@@ -21,20 +21,16 @@
    <title>Responsive portfolio website - Bedimcode</title>
 </head>
 <style>
-   body {
+   /* body {
       background-image: url("storefrontsColorizedTextureBlueNeon.jpg");
-   }
-
-   .skills ,
+   } */
    
-   .contact,
-   .projects {
+body, .backgrnd_drk{
       background-image: url("storefrontsColorizedTextureBlueNeondrk.jpg");
    }
 
-   
-   .services,
-   .contact {
+  header, .backgrnd
+  {
       background-image: url("storefrontsColorizedTextureBlueNeon.jpg");
    }
 
@@ -135,6 +131,7 @@
    <main class="main">
 
       <!--==================== HOME ====================-->
+      <div class="backgrnd_drk">
       <section class="home section" id="home">
          <div class="home__container container grid">
             <div class="home__content">
@@ -202,8 +199,9 @@
             </div>
          </div>
       </section>
-
+</div>
       <!--==================== ABOUT ====================-->
+      <div class="backgrnd">
       <section class="about__section" id="about">
          <div class="about__container container grid">
             <div class="about__data">
@@ -262,15 +260,16 @@
 <!-- 
                      Insert your profile (recommended size: 640 x 940)  -->
                 <image class="home__img" id="maskBlob" width="640" height="700"
-                        href="assets\img\violin_icon_colorized.svg" alt="Violin image" />
+                        href="assets\img\violin_icon_colorized.svg" style = "opacity:.7;" alt="Violin image" />
                  
                </svg>
 
          </div>
       </section>
-
+</div>
       <!--==================== SKILLS ====================-->
-      <section class="skills section">
+       <div class="backgrnd_drk">
+      <section class="skills ">
 
          <div class="skills__container container grid">
             <div class="skills__data">
@@ -302,8 +301,9 @@
             </div>
          </div>
       </section>
-
+</div>
       <!--==================== SERVICES ====================-->
+     <div class = "backgrnd">
       <section class="services" id="services">
          <h3 class="section__subtitle">
             My <span>Services
@@ -327,8 +327,9 @@
          </div>
 
       </section>
-
+      </div>
       <!--==================== PROJECTS ====================-->
+           <div class="backgrnd_drk">
       <section class="projects" id="projects" >
          <h3 class="section__subtitle" >
             My <span>Jobs</span>
@@ -441,8 +442,9 @@
             </article>
          </div>
       </section>
-
+</div>
       <!--==================== CONTACT ====================-->
+      <div class = "backgrnd">
       <section class="contact" id="contact">
          <h3 class="section__subtitle">
             Get In <span>Touch</span>
@@ -469,7 +471,7 @@
          </div>
       </section>
    </main>
-
+</div>
    <!--==================== FOOTER ====================-->
    <footer class="footer">
       <div class="footer__container container grid">
