@@ -167,7 +167,7 @@ svg {
 }
 
 .section__subtitle span {
-  color: var( --first-color-alt);
+  color: var( --text-color-alt);
 }
 
 .main {
@@ -197,7 +197,7 @@ svg {
 }
 
 .nav__logo span {
-  color: var(--first-color);
+  color: var(--body-color);
 }
 
 .nav__toggle,
@@ -342,7 +342,8 @@ svg {
 }
 
 .home__blob, 
-.about__blob {
+.about__blob,
+.image__blob {
   width: 320px;
   /* fill: var(--container-color); */
   filter: drop-shadow(0 12px 12px hsl(331 42.4% 23.1%));
@@ -677,7 +678,7 @@ svg {
 }
 
 footer__title span {
-  color: var(--first-color)
+  color: var(--text-color)
 }
 
 .footer__education {
