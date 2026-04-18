@@ -27,6 +27,7 @@
   --body-color: rgb(30, 134, 169, .7);
   --body-color-transparent: hsl(195, 70%, 39%, .1);
   --container-color: rgb(33, 35, 44, .6);
+   --container-color-lght: rgb(33, 35, 44, .4);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -178,7 +179,7 @@ svg {
 .header {
   position: fixed;
   width: 100%;
-  background-color: var(--container-color);
+  background-color: var(--body-color-transparent);
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -350,8 +351,13 @@ svg {
   /* background-image: linear-gradient(to bottom, rgba(49, 56, 69, 0.2), var(  --title-color)); */    
 }
 
-.home__img {
+.home__img  {
   width: 1000px;
+  transform: translateX(-120px);
+}
+
+#maskBlob {
+   width: 1000px;
   transform: translateX(-120px);
 }
 
@@ -479,6 +485,10 @@ svg {
   border: 2px solid var(--container-color); 
   transition: border .4s;
  
+}
+
+.skills__group {
+    transition: border .4s;
 }
 
 .section__subtitle {
@@ -783,6 +793,31 @@ footer__title span {
     justify-content: center;
   }
 }
+
+/* Define the movement */
+/* @keyframes slide-in-horizontal { */
+  /* Start 150% of the viewport width to the right of its original position */
+  /* 0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+} */
+
+
+/* Apply to the HTML element */
+/* .image__blob{
+ animation: slide-in-horizontal 2s ease-in-out;
+} */
+
 
 /* @media screen and (max-width: 576px) {
 
