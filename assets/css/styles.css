@@ -128,9 +128,9 @@ svg {
   height: auto;
 }
 
-/* rect,  .home, #maskBlob {
-    box-shadow: 0 4px 12px var(--title-color);
-} */
+ #maskBlob {
+   background-color: black;
+} 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -390,6 +390,7 @@ svg {
 }
 .about__container {
   row-gap: 2.5rem; 
+ 
 }
  
 .about__data
@@ -411,19 +412,27 @@ svg {
   justify-self: center;
 }
 
-.about__blob,
+
 .image__blob{
   width: 400px;
 } 
 
+
+  
+
 .about__blob path{
   stroke: var(--first-color);
-  fill: rgb(from var(--container-color) r g b / 1.0)
-}
-/* .image__frame {
-  margin-top: 2rem;
-} */
+  fill: rgb(from var(--container-color) r g b / 1.0);
  
+}
+.image__frame, .home__image {
+  
+  /* Creates a 2px white outline around the visible parts of the PNG */
+  filter: drop-shadow(2px 0 0 var(--title-color)) 
+          drop-shadow(-2px 0 0 var(--title-color)) 
+          drop-shadow(0 2px 0 var(--title-color)) 
+          drop-shadow(0 -2px 0 var(--title-color));
+}
 /*=============== SKILLS ===============*/
 
 .skills {
@@ -670,6 +679,10 @@ svg {
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
+
+#contact-message {
+ color: var(hsl(228, 8%, 65%));
+}
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(__container-color);
@@ -814,9 +827,9 @@ footer__title span {
 
 
 /* Apply to the HTML element */
-/* .image__blob{
+.image__blob{
  animation: slide-in-horizontal 2s ease-in-out;
-} */
+}
 
 
 /* @media screen and (max-width: 576px) {
@@ -865,7 +878,7 @@ footer__title span {
   .home__blob,
   .about__blob
    {
-    width: 400px;
+    width: 420px;
   }
   .about__data {
     order: 1; 
@@ -934,10 +947,6 @@ footer__title span {
     padding-bottom: 1rem;
   }
 
-  .about__blob {
-    width: 550px;
-  }
-  
   .about__description{
     margin-bottom: 3rem;
     /* display: flex;

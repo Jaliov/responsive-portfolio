@@ -57,7 +57,8 @@ const sendEmail = (e) => {
 emailjs.sendForm('service_xlq32xv', 'template_bg11uyl', '#contact-form','KIOyGiHHzaeuqoAM6')
 .then(() => {
     //SHow sent message
-    contactMessage.textContent = "Message sent successfully ✅"
+    contactMessage.textContent = "Message sent successfully ✅";
+    contactMessage.style.color = "white";
 
 // remove message after five seconds       
 setTimeout(() => {
