@@ -149,14 +149,11 @@ svg {
 /* .section__subtitle {
  padding-top: 2rem;
 } */
-.section__title, 
-.section__subtitle {
+.section__title 
+{
   text-align: center;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-}
-
-.section__title {
   font-family: 'roboto-serif', Georgia,'Times New Roman', serif;
   font-size: var(--h1-font-size);
   /* margin-bottom: 1.5rem; */
@@ -164,7 +161,8 @@ svg {
 
 .section__subtitle {
   font-size: var(--small-font-size);
-  /* margin-bottom: .15rem; */
+  color: var(--body-color);
+  text-align: center;
 }
 
 .section__subtitle span {
@@ -407,7 +405,7 @@ svg {
 .section__subtitle,
 .section__title {
   width: 100%;
-  margin-bottom: 1rem;  
+  margin-bottom: .5rem;  
   background-color: rgb(33, 35, 44, .2);
   }
 
@@ -726,7 +724,7 @@ footer__title span {
   padding: .5rem;
   color: var(--text-color);
   font-size: 1.5rem; 
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(100% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   transition: t transform .4s;
 }
 
@@ -812,6 +810,10 @@ footer__title span {
     justify-content: center;
   }
  
+}
+
+#contactBtn {
+  margin-bottom: 1rem;
 }
 
 /* Define the movement */
@@ -967,7 +969,7 @@ footer__title span {
   }
 
   .about__description{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     /* display: flex;
     width: 100%; */
   }
@@ -977,9 +979,7 @@ footer__title span {
     padding-bottom: 4rem;
     margin-top: -4rem;
   }
-  .skills__description{
-    margin-bottom: 3rem;
-  }
+
   .skills__content{
     column-gap: 8rem;
   }
