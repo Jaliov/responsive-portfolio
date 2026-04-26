@@ -834,7 +834,10 @@ footer__title span {
   }
   .skills {
     padding-top: -2rem;
+   
   }
+
+
   .section__subtitle {
     margin-top: 1rem;
     background-image: url;
@@ -948,7 +951,7 @@ footer__title span {
   }
   .skills__container {
     grid-template-columns: 340px 425px;
-    column-gap: 10rem;
+    column-gap: 3rem;
     padding-bottom: 4rem;
     margin-top: -4rem;
   }
