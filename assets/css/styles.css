@@ -18,6 +18,8 @@
       -> Copy the color mode (HSL)
   */
 
+  
+
   --hue: 210;
   --first-color: rgba(49, 56, 69, 0.9);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
@@ -65,7 +67,40 @@
 }
 
 /*=============== BASE ===============*/
+ .backgrnd_drk {
+      background-image: url("/storefrontsColorizedTextureBlueNeondrk.jpg");
+      padding-top: 2rem;
+   }
 
+   .backgrnd {
+      background-image: url("/storefrontsColorizedTextureBlueNeon.jpg");
+      padding-top: 2rem;
+   }
+
+   .footer {
+      background-image: url("/storefrontsColorizedTextureBlueNeondrk.jpg");
+   }
+
+   .home__image {
+      filter: drop-shadow(5px 3px 10px rgba(223, 23, 23, 0.5));
+      transform: scaleX(-1);
+      opacity: .6;
+   }
+
+   .image-frame {
+      clip-path: polygon(50% 0%, 100% 23%, 100% 70%, 50% 95%, 50% 95%, 0 69%, 0 23%);
+      filter: drop-shadow(5px 5px 10px rgba(223, 23, 23, 0.5));
+      justify-self: center;
+      display: inline-block;
+      /* Wraps tightly around the image*/
+   /* padding: 40px; */
+   /* Space between image and border */
+      border-radius: 1rem;
+      background-color: rgba(49, 56, 69, 0.5);
+      background-image: linear-gradient(to bottom, rgb(160, 54, 86, .2), rgba(0, 0, 0, 0.5));
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+      /* Adds a 3D depth effect */
+   }
 * {
   box-sizing: border-box;
   padding: 0;
@@ -417,6 +452,8 @@ svg {
 
   border: 2px solid red;
 }
+
+/*=============== SKILLS ===============*/
 
 /*=============== SKILLS ===============*/
 
@@ -834,10 +871,7 @@ footer__title span {
   }
   .skills {
     padding-top: -2rem;
-   
   }
-
-
   .section__subtitle {
     margin-top: 1rem;
     background-image: url;
@@ -951,7 +985,7 @@ footer__title span {
   }
   .skills__container {
     grid-template-columns: 340px 425px;
-    column-gap: 3rem;
+    column-gap: 10rem;
     padding-bottom: 4rem;
     margin-top: -4rem;
   }
@@ -1033,3 +1067,18 @@ footer__title span {
 .ri-arrow-up-line {
   color: white;
 }
+ #message__send {
+      display: flex;
+      justify-self: center;
+   }
+
+   @media screen and (max-width: 576px) {
+      #message__send {
+         margin-bottom: .5rem;
+      }
+   }
+
+   strong
+   b {
+      display: inline;
+   }
