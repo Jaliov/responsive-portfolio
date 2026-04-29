@@ -18,8 +18,6 @@
       -> Copy the color mode (HSL)
   */
 
-  
-
   --hue: 210;
   --first-color: rgba(49, 56, 69, 0.9);
   --first-color-alt: hsl(var(--hue), 56%, 35%);

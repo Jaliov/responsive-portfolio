@@ -17,6 +17,10 @@ if(navClose) {
     })
 }
 
+window.onload = function() {
+  navMenu.classList.remove('show-menu').style.display = "none";
+};
+
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
