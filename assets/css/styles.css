@@ -3,6 +3,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
+  scroll-padding-top: 8rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -68,6 +69,7 @@
  .backgrnd_drk {
       background-image: url("/storefrontsColorizedTextureBlueNeondrk.jpg");
       padding-top: 2rem;
+      
    }
 
    .backgrnd {
